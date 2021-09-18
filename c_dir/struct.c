@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 /*
 **	mallocによるヒープ領域の確保
@@ -14,22 +14,18 @@
 **	4. スタック領域: ローカル変数などが置かれる領域
 */
 
-#define SIZE 3
-
-int							main(void)
+struct 		student
 {
-	int						*arr = NULL;
-	unsigned int	i;
+	int			id;
+	char		*name;
+};
 
-	// 変数 = (変数の型)malloc(sizeof(型)*型のサイズ)
-	arr = (int*)malloc(sizeof(int)*SIZE);// ヒープ領域を確保
-	// 値の代入
-	for (i = 0;i < SIZE;i++) *(arr + i) = i;
+int				main(void)
+{
+	struct	student data;
 
-	// 結果の出力
-	for (i = 0;i < SIZE;i++) printf("arr[%d]: %d\n", i, *(arr + i));
-
-	//メモリの解放
-	free(arr);
+	data.id = 1;
+	data.name = "name";
+	printf("id:%d\nname:%s\n", data.id, data.name);
 	return (0);
 }
