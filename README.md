@@ -4,6 +4,7 @@
 - ShellScript
 - Assembly
 - C
+- C++
 - Python
 - JavaScript
 
