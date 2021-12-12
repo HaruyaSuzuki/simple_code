@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript)
 ![](https://img.shields.io/badge/Bash-708090?style=for-the-badge&logo=gnubash)
 
-A simple file created as a test
+A simple file created as a test.
 ## language
 - Assembly
 - C
